@@ -182,7 +182,7 @@ registerBlockType('ia/block-galleri', {
 
         const getImage = image => {
             const {
-                url,
+                url = "",
             } = image;
 
             const imgStyle = {
@@ -288,7 +288,7 @@ registerBlockType('ia/block-galleri', {
 
         const getImage = image => {
             const {
-                url
+                url = ""
             } = image;
 
             const imgStyle = {

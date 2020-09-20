@@ -206,7 +206,7 @@ registerBlockType('ia/block-bild', {
         } = attributes;
 
         const {
-            url,
+            url = "",
             height,
             width
         } = image;
