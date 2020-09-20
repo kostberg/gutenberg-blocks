@@ -90,6 +90,7 @@ registerBlockType('ia/block-bild', {
 
 	edit: ( props ) => {
         const { attributes, setAttributes } = props;
+        if(!attributes.image) return;
 
         const {
             image,
@@ -197,6 +198,7 @@ registerBlockType('ia/block-bild', {
 
 	save: ( props ) => {
         const { attributes } = props;
+        if(!attributes.image) return;
 
         const {
             image,
@@ -206,7 +208,7 @@ registerBlockType('ia/block-bild', {
         } = attributes;
 
         const {
-            url = "",
+            url,
             height,
             width
         } = image;
